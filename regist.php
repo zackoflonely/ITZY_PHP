@@ -21,8 +21,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav" style="padding-left:79vw; font-weight: 500;">
-            <a class="nav-link active" aria-current="page" href="#">Sign In</a>
-            <a class="nav-link" href="regist.php">Sign Up</a>
+            <a class="nav-link" aria-current="page" href="index.php">Sign In</a>
+            <a class="nav-link active" href="#">Sign Up</a>
         </div>
         </div>
     </div>
@@ -30,41 +30,41 @@
     </header>
     <?php
       session_start();
-      
+      $_SESSION['nama']=array();
+      $_SESSION['pw']=array();
       if(isset($_POST['submit'])) {
-          $username = $_POST['email'];
+          $username = $_POST['nama'];
           $password = $_POST['password'];
-          
-          foreach ($_SESSION['nama'] as $nama){
-            foreach($_SESSION['pw'] as $pw){  
-              if($username == $nama && $password == $pw){
-                  $_SESSION['username'] = $username;
-                  echo '<script type ="text/JavaScript">';  
-                  echo 'alert("Selamat datang")';
-                  echo '</script>'; 
-                  header('Location: home.php');
-              }
+          array_push($_SESSION['nama'],$username);
+          array_push($_SESSION['pw'],$password);
+        foreach ($_SESSION['nama'] as $nama){
+            echo $nama;
+            foreach($_SESSION['pw'] as $pw){
+                if($username == $nama && $pw==$password){
+                    header('Location: index.php');
+                }
             }
-          }
-          echo '<script type ="text/JavaScript">';  
-          echo 'alert("Inputan salah bro")';  
-          echo '</script>'; 
         }
+      }
       ?>
 <div id="menu" style="height: 100vh; background-image: url(assets/itzy.webp); background-size: cover;">
-<div style="padding: 28vh 0 0 35vw;">
-      <form method="POST" style="background:#cec4d8; opacity:0.9; border-radius:6px; height:38vh; width:30vw; text-align: center;">
-        <h1 style="padding-left:70px;">Sign In</h1>
+<div style="padding: 20vh 0 0 35vw;">
+      <form method="POST" style="background:#cec4d8; opacity:0.9; border-radius:6px; height:47vh; width:30vw; text-align: center;">
+        <h1 style="padding-left:70px;">Sign Up</h1>
+        <div>
+          Email
+          <input type="text" name="email" class="email" style="margin-left: 45px;" />
+        </div>
         <div>
           Username
-          <input type="text" name="email" class="email" style="margin-left: 10px;" />
+          <input type="text" name="nama" class="email" style="margin-left: 10px;" />
         </div>
         <div>
           Password
           <input type="password" name="password" class="password" style="margin-left: 15px; margin-top:15px; margin-bottom:2vh;"/>
         </div>
         <button name="submit" type="submit" class="tombol">SIGN IN</button>
-        <p style="padding:0.2vh 0 0 5.8vw;">Belum punya akun?<a href="regist.php">Klik disini</a></p>
+        <p style="padding:0.2vh 0 0 5.8vw;">Sudah punya akun?<a href="index.php">Klik disini</a></p>
         </form>
 </div>
 <footer>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COFFEE</title>
-    <link rel="stylesheet" href="assets\style.css">
+    <title>ITZY</title>
+    <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/5c90e171df.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -20,9 +20,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav" style="padding-left:70vw; font-weight: 500;">
-            <a class="nav-link active" aria-current="page" href="home.php">Home</a>
+            <a class="nav-link" aria-current="page" href="home.php">HOME</a>
             <a class="nav-link" href="album.php">DISCOGRAPHY</a>
-            <a class="nav-link" href="form.php">MIDZY</a>
+            <a class="nav-link active" href="form.php">MIDZY</a>
         </div>
         </div>
     </div>
@@ -67,6 +67,15 @@
   <button type="submit" class="btn btn-success" style="width:100%; margin:0 0 20px 0; font-weight:100;">Send</button>
 </form>
 </div>
+<footer>
+  <div class="footers" style="padding-top: 3vh;">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <div class="cp">Copyright © JYP ENTERTAINMENT Co., Ltd. All rights reserved.</div>
+  </div>
+</footer>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">

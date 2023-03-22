@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COFFEE</title>
+    <title>ITZY</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
     <script src="https://kit.fontawesome.com/5c90e171df.js" crossorigin="anonymous"></script>
@@ -20,8 +20,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav" style="padding-left:70vw; font-weight: 500;">
-                <a class="nav-link active" aria-current="page" href="home.php">Home</a>
-                <a class="nav-link" href="album.php">DISCOGRAPHY</a>
+                <a class="nav-link" aria-current="page" href="home.php">HOME</a>
+                <a class="nav-link active" href="album.php">DISCOGRAPHY</a>
                 <a class="nav-link" href="form.php">MIDZY</a>
             </div>
             </div>
